@@ -1,0 +1,21 @@
+{
+  "statusCode": 200,
+  "data": {
+    "page": 1,
+    "limit": 1,
+    "totalPages": 293,
+    "previousPage": false,
+    "nextPage": true,
+    "data": [
+      {
+        "strMeal": "Dal fry",
+        "strCategory": "Vegetarian",
+        "strArea": "Indian",
+        "strInstructions": "Wash and soak toor dal in approx. 3 cups of water, for at least one hours. Dal will be double in volume after soaking. Drain the water.\r\nCook dal with 2-1/2 cups water and add salt, turmeric, on medium high heat, until soft in texture (approximately 30 mins) it should be like thick soup.\r\nIn a frying pan, heat the ghee. Add cumin seeds, and mustard seeds. After the seeds crack, add bay leaves, green chili, ginger and chili powder. Stir for a few seconds.\r\nAdd tomatoes, salt and sugar stir and cook until tomatoes are tender and mushy.\r\nAdd cilantro and garam masala cook for about one minute.\r\nPour the seasoning over dal mix it well and cook for another minute.\r\nServe with Naan.",
+        "strYoutube": "https://www.youtube.com/watch?v=J4D855Q9-jg"
+      }
+    ]
+  },
+  "message": "Meals fetched successfully",
+  "success": true
+}
