@@ -63,9 +63,30 @@ HttpServices.fetchItem(apiLink: ..., TElement: (json) => FetchValue<Book>.fromJs
 
 ### Ekran Görüntüleri
 
+#### `sayi_tahmin_uyg`
 <p>
-  <img src="uygulamalarim/sayi_tahmin_uyg/flutter_01.png" alt="Sayı tahmin uygulaması – tahmin ekranı" width="220">
-  <img src="uygulamalarim/sayi_tahmin_uyg/flutter_02.png" alt="Sayı tahmin uygulaması" width="220">
+  <img src="uygulamalarim/sayi_tahmin_uyg/screenshots/anasayfa.jpg" alt="Sayı tahmin – anasayfa" width="200">
+  <img src="uygulamalarim/sayi_tahmin_uyg/flutter_01.png" alt="Sayı tahmin – tahmin ekranı" width="200">
+  <img src="uygulamalarim/sayi_tahmin_uyg/screenshots/tahmin_ipucu.jpg" alt="Sayı tahmin – ipucu" width="200">
+  <img src="uygulamalarim/sayi_tahmin_uyg/screenshots/sonuc_ekrani.jpg" alt="Sayı tahmin – sonuç ekranı" width="200">
+</p>
+
+#### `eat_app`
+<p>
+  <img src="uygulamalarim/eat_app/screenshots/yemek_listesi.jpg" alt="Eat app – yemek listesi" width="200">
+  <img src="uygulamalarim/eat_app/screenshots/detay_sayfasi.jpg" alt="Eat app – detay sayfası" width="200">
+</p>
+
+#### `movies_app`
+<p>
+  <img src="uygulamalarim/movies_app/screenshots/film_listesi.jpg" alt="Movies app – film listesi" width="200">
+  <img src="uygulamalarim/movies_app/screenshots/film_detay.jpg" alt="Movies app – film detay ve kiralama" width="200">
+</p>
+
+#### `yemek_tarifi_uygulamasi` & `log_in_uygulamasi`
+<p>
+  <img src="uygulamalarim/yemek_tarifi_uygulamasi/screenshots/tarif_sayfasi.jpg" alt="Yemek tarifi sayfası" width="200">
+  <img src="uygulamalarim/log_in_uygulamasi/screenshots/giris_ekrani.jpg" alt="Giriş ekranı" width="200">
 </p>
 
 ## Çalıştırma
