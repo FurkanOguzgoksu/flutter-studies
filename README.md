@@ -37,11 +37,29 @@ Ders dosyaları numaralı (`1_…`, `2_…`) olduğundan, kursun akışını tak
 | [`movies_app`](uygulamalarim/movies_app) | `FutureBuilder` ile listelenen film kataloğu ve film detay sayfası |
 | [`sayi_tahmin_uyg`](uygulamalarim/sayi_tahmin_uyg) | 0–50 arasında rastgele seçilen sayıyı ipuçlarıyla, sınırlı hakla tahmin etme oyunu |
 | [`vericekme`](uygulamalarim/vericekme) | `http` paketiyle [FreeAPI](https://api.freeapi.app)'den kitap ve yemek verisi çekip listeleme |
+| [`vericekme_v2`](uygulamalarim/vericekme_v2) | Aynı uygulamanın ikinci hâli; farklar aşağıda |
 | [`yemek_tarifi_uygulamasi`](uygulamalarim/yemek_tarifi_uygulamasi) | Tek sayfalık yemek tarifi ekranı tasarımı |
 | [`log_in_uygulamasi`](uygulamalarim/log_in_uygulamasi) | Giriş ekranı arayüz tasarımı |
 | [`ilham_ver_uygulamasi`](uygulamalarim/ilham_ver_uygulamasi) | Profil fotoğrafı ve ilham verici bir yazıdan oluşan kişisel sayfa |
 | [`ram`](uygulamalarim/ram) | `dart:ffi` ile bellek ayırma ve değişkenlerin bellekteki kimliğini (`identityHashCode`) inceleme denemesi |
 | [`template`](uygulamalarim/template) | Generic fonksiyonlar ve `runtimeType` üzerine küçük denemeler |
+
+### `vericekme` ve `vericekme_v2` Farkı
+
+İki proje de veriyi `HttpServices.fetchItem<T>()` adlı tek bir generic fonksiyonla çekiyor. JSON'u modele çeviren fonksiyon parametre olarak veriliyor, böylece aynı servis hem kitap hem yemek listesi için kullanılıyor.
+
+| | `vericekme` | `vericekme_v2` |
+| --- | --- | --- |
+| Dönüştürücü parametrenin adı | `fromJson` | `TElement` |
+| `http` paketi | `^0.13.6` | `^1.2.1` |
+
+```dart
+// vericekme
+HttpServices.fetchItem(apiLink: ..., fromJson: (json) => FetchValue<Book>.fromJson(json, Book.fromJson));
+
+// vericekme_v2
+HttpServices.fetchItem(apiLink: ..., TElement: (json) => FetchValue<Book>.fromJson(json, Book.fromJson));
+```
 
 ### Ekran Görüntüleri
 
